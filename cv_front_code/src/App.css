@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+article {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+}
+
+article p {
+    width: 50%;
+    color: white;
+    text-align: justify;
+}
+
+@media(max-width:480px) {}
+
+@media(min-width:768spx) {
+    article p {
+        font-size: 1rem
+    }
+}
+
+@media(min-width:1024px) {}
+
+@media(min-width:1200px) {
+    article p {
+        font-size: 1.2rem;
+    }
+}
