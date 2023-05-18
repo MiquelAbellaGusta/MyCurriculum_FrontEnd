@@ -6,15 +6,15 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="container">
+      <div className="contenedor">
         <div className="portrait">
-                </div>
+        </div>
         <article>
-          <h1></h1>
-          <h3></h3>
+          <h1>Miquel Abella Gustà</h1>
+          <h3>~* Web developer Full Stack *~</h3>
           <p></p>
-          </article>
-          <button></button>
+        </article>
+        <button></button>
       </div >
     </BrowserRouter >
   )

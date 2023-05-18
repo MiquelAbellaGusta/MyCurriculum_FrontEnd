@@ -1,49 +1,62 @@
 @import '../css/reset.css';
 
+body {
+    background-color: black;
+}
 
-.container {
-    border: 4px solid red;
-    width:100%;
-display: grid;
+.contenedor {
+    width: 95%;
+    display: grid;
     height: 100vh;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    margin:0;
+    margin: 10px auto;
+    margin-bottom: 0;
 
-   }
+}
 
-.portrait{
-    background-color: blue;
+.portrait {
+    background-image: url('../assets/images/fondoWeb1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-column: 1/6;
     grid-row: 1/6;
 }
 
 article {
-    border:4px solid orange;
-display:grid;
-grid-column:6/13;
-grid-row: 1/5;
-grid-template-columns: 1fr;
+    display: grid;
+    grid-column: 6/13;
+    grid-row: 1/5;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.4fr 3fr;
-}
-article h1{
-background-color: black;
 
 }
- article h3{
-    background-color: yellow;
- }
 
- article p{
+article h1 {
+    font-size: 4rem;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+article h3 {
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+article p {
     background-color: purple;
- }
+}
 
- button{
+button {
     background-color: aqua;
     height: 50px;
     margin-top: 20px;
     grid-column: 8/10;
     grid-row: 5;
- }
+}
 
 @media(max-width:480px) {}
 
