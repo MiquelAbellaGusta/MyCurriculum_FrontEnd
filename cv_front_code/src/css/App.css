@@ -1,0 +1,62 @@
+@import '../css/reset.css';
+
+
+.container {
+    border: 4px solid red;
+    width:100%;
+display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin:0;
+
+   }
+
+.portrait{
+    background-color: blue;
+    grid-column: 1/6;
+    grid-row: 1/6;
+}
+
+article {
+    border:4px solid orange;
+display:grid;
+grid-column:6/13;
+grid-row: 1/5;
+grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 3fr;
+}
+article h1{
+background-color: black;
+
+}
+ article h3{
+    background-color: yellow;
+ }
+
+ article p{
+    background-color: purple;
+ }
+
+ button{
+    background-color: aqua;
+    height: 50px;
+    margin-top: 20px;
+    grid-column: 8/10;
+    grid-row: 5;
+ }
+
+@media(max-width:480px) {}
+
+@media(min-width:768spx) {
+    article p {
+        font-size: 0.5rem
+    }
+}
+
+@media(min-width:1024px) {}
+
+@media(min-width:1200px) {
+    article p {
+        font-size: 1rem;
+    }
+}
